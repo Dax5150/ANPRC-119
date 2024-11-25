@@ -1,0 +1,10 @@
+MatPBRBasic {
+ SpecularMul 0.87
+ RoughnessScale 2.184
+ MetalnessScale 1.177
+ AOScale 1.439
+ BCRMap "{80C914F796B6B83D}Assets/119color4.edds"
+ NormalPower 0.209
+ NMOMap "{2A1CE4107F9B0525}Assets/119normal2.edds"
+ UVSrcGlobalMaps "UV set 2"
+}

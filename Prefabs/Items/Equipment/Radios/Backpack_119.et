@@ -1,0 +1,86 @@
+GenericEntity : "{09D6A1C9543E4A95}Prefabs/Items/Core/Backpack_Base.et" {
+ ID "511E9C6ADE70F798"
+ components {
+  SignalsManagerComponent "{62F2F68748983C40}" {
+  }
+  BaseRadioComponent "{62F2F686B510D8AB}" {
+   "Encryption key" "chickenNuggets"
+   "Turned on" 1
+   Transceivers {
+    RadioTransceiver "{62F2F686BF1983A1}" {
+     "Transmitting Range" 8000
+    }
+   }
+  }
+  MeshObject "{511E9C6ADE70F7BD}" {
+   Object "{D13731298250B84E}Assets/anprc119back.xob"
+   Materials {
+    MaterialAssignClass "{62F2F686876BAAE2}" {
+     SourceMaterial "Backpack_Medical_M5"
+     AssignedMaterial "{081E21C23268ADF9}Assets/119.emat"
+    }
+   }
+  }
+  SCR_RadioComponent "{62F2F687764FDE8F}" {
+   m_iRadioCategory MANPACK
+   m_iRadioType ANPRC77
+  }
+  SCR_UniversalInventoryStorageComponent "{5222CB03A40528FA}" {
+   Attributes SCR_ItemAttributeCollection "{5222CB039E9715D1}" {
+    ItemDisplayName UIInfo "{5222CB03904B414C}" {
+     Name "ANPRC-119"
+     Description "Long-range radio backpack"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 5
+     SizeSetupStrategy Manual
+     ItemDimensions 20 20 20
+     ItemVolume 4001
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{52BCBDD2B54658EC}" {
+      CameraDistanceToItem 3
+      CameraOffset 0 -0.25 0
+      PreviewModel "{D13731298250B84E}Assets/anprc119back.xob"
+     }
+     SCR_VONPreviewAttributes "{62F2F6870D8CAFB7}" {
+      CameraPreset Back
+      CameraOrbitAngles 25 25 180
+      CameraDistanceToItem 3.05
+      CameraOffset 0 -0.25 0
+      FOV 12.6
+     }
+    }
+   }
+   UseCapacityCoefficient 0
+   CapacityCoefficient 1
+   MaxItemSize 20 20 20
+   m_fMaxWeight 3
+  }
+  SimpleSoundComponent "{62F2F6869EE8F84C}" {
+   Filenames {
+    "{3D8789E7ACF6EDD3}Sounds/Items/_SharedData/PickUp/Items_PickUp_BackPack.acp" "{F2BEB3DF3F95849F}Sounds/Items/_SharedData/Open/Backpack_Medical_M5/Items_Backpack_Medical_M5.acp"
+   }
+  }
+  BaseLoadoutClothComponent "{511E9C6ADE70F7BB}" {
+   WornModel "{D13731298250B84E}Assets/anprc119back.xob"
+   ItemModel "{9D969FC022D3769A}Assets/119ground.xob"
+   DeflatedModel "{D13731298250B84E}Assets/anprc119back.xob"
+   AreaTypeWhenModelChange {
+    LoadoutArmoredVestSlotArea "{62F2F6869EE8F858}" {
+    }
+   }
+  }
+  ActionsManagerComponent "{511E9C6ADE70F786}" {
+   ActionContexts {
+    UserActionContext "{511E9C6ADE70F788}" {
+     Position PointInfo "{511E9C6ADE70F78D}" {
+      Offset 0 0.1805 0.1041
+     }
+     Radius 1
+    }
+   }
+  }
+ }
+ coords 1220.652 38.011 2841.177
+}

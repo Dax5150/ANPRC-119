@@ -1,0 +1,8 @@
+GameProject {
+ ID "ANPRC119"
+ GUID "62F0DB18505C7BF6"
+ TITLE "ANPRC119"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+}
